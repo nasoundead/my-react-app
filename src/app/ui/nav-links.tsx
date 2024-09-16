@@ -2,7 +2,7 @@
 // Depending on the size of the application, this would be stored in a database.
 const links = [
   // { name: "Home", href: "/dashboard" },
-  { name: "露点计算器", href: "/caculators/dew-caculator" },
+  { name: "露点计算器", href: "/ui/dew-caculator" },
 ];
 
 export default function NavLinks() {

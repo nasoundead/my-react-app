@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NavLinks from "@/app/caculators/nav-links";
+import NavLinks from "@/app/ui/nav-links";
 
 export default function SideNav() {
   return (
