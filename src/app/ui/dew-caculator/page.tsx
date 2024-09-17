@@ -14,7 +14,6 @@ export default function Page() {
         <label htmlFor="temp">温度(℃):</label>
         <input
           type="number"
-          // className="min-h-[auto] "
           id="temp"
           name="temp"
           value={temp}
