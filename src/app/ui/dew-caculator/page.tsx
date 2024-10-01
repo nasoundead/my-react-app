@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <div className="flex-row gap-10 p-12 text-3xl">
-        <label htmlFor="temp">温度(℃):</label>
+        <label htmlFor="temp">温度(degC):</label>
         <input
           type="number"
           id="temp"
@@ -41,10 +41,10 @@ export default function Page() {
           step="1"
         />
         <hr />
-        <label>露点:</label>
+        <label>露点(degC):</label>
         <output className="text-blue-800">{dew}</output>
       </div>
-      <DewLine />
+      <DewLine relativeHumidity={rh}/>
     </>
   );
 }

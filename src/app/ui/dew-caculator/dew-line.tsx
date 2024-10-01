@@ -1,11 +1,20 @@
 import { Line } from "@ant-design/charts";
 import { calculateDewPoint } from "./dew-utils";
+import { useEffect, useState } from "react";
 
-export default function DewLine() {
-  const rh = 60;
+// export interface DewLineProps {
+//   relativeHumidity: number;
+// }
 
-  const start = -20;
-  const end = 50;
+export default function DewLine({relativeHumidity}: {relativeHumidity: number}) {
+
+  const [rh, setRh] = useState(relativeHumidity);
+  useEffect(() => {
+    setRh(relativeHumidity);
+  })
+
+  const start = -40;
+  const end = 80;
   const step = 1;
   const array1 = Array.from({ length: (end - start) / step + 1 }, (_, i) => ({
     index: i,
@@ -29,7 +38,7 @@ export default function DewLine() {
     },
     xField: (d: any) => d.index,
     yField: "temp",
-    colorField: "steelblue",
+    colorField: "division",
     seriesField: "division",
   };
   return <Line {...config} />;
