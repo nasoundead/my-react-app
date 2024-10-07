@@ -29,7 +29,7 @@ export default function Page() {
         marks
         min={-40}
         max={80}
-        valueLabelDisplay="auto"
+        valueLabelDisplay="on"
       />
         {/* <label htmlFor="temp">温度(degC):</label>
         <input
@@ -61,7 +61,7 @@ export default function Page() {
         marks
         min={0}
         max={100}
-        valueLabelDisplay="auto"
+        valueLabelDisplay="on"
       />
         {/* <label htmlFor="rh">相对湿度(%)</label>
         <input

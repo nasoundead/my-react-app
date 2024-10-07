@@ -3,6 +3,7 @@
 const links = [
   // { name: "Home", href: "/dashboard" },
   { name: "露点计算器", href: "/ui/dew-caculator" },
+  { name: "Die受力计算器", href: "/ui/psi-caculator" },
 ];
 
 export default function NavLinks() {
